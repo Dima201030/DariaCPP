@@ -5,7 +5,9 @@ project(DariaCPP LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(DariaCPP main.cpp)
+add_executable(DariaCPP main.cpp
+    cycles.cpp
+    cycles.h)
 
 include(GNUInstallDirs)
 install(TARGETS DariaCPP

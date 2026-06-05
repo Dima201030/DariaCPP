@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include "cycles.h"
 
 int main() {
 
@@ -480,49 +481,49 @@ int main() {
     // Вывод:
     // 50
 
-    int number1, number2;
-    char op;
+    // int number1, number2;
+    // char op;
 
-    std::cout << "Введите первое число: ";
-    std::cin >> number1;
+    // std::cout << "Введите первое число: ";
+    // std::cin >> number1;
 
-    std::cout << "Введите оператор: ";
-    std::cin >> op;
+    // std::cout << "Введите оператор: ";
+    // std::cin >> op;
 
-    std::cout << "Введите второе число: ";
-    std::cin >> number2;
+    // std::cout << "Введите второе число: ";
+    // std::cin >> number2;
 
-    switch (op) {
-    case '+':
-        std::cout << number1 + number2 << std::endl;
-        break;
-    case '-':
-        std::cout << number1 - number2 << std::endl;
-        break;
-    case '*':
-        std::cout << number1 * number2 << std::endl;
-        break;
-    case '/':
-        if (number2 == 0) {
-            std::cout << "Ошибка" << std::endl;
-            break;
-        }
+    // switch (op) {
+    // case '+':
+    //     std::cout << number1 + number2 << std::endl;
+    //     break;
+    // case '-':
+    //     std::cout << number1 - number2 << std::endl;
+    //     break;
+    // case '*':
+    //     std::cout << number1 * number2 << std::endl;
+    //     break;
+    // case '/':
+    //     if (number2 == 0) {
+    //         std::cout << "Ошибка" << std::endl;
+    //         break;
+    //     }
 
-        std::cout << number1 / number2 << std::endl;
+    //     std::cout << number1 / number2 << std::endl;
 
-        break;
-        // if (number2 == 0) {
-        //     std::cout << "Ошибка" << std::endl;
-        //     break;
-        // default:
-        //     std::cout << "Нет ответа" << std::endl;
-        //     break;
+    //     break;
+    //     // if (number2 == 0) {
+    //     //     std::cout << "Ошибка" << std::endl;
+    //     //     break;
+    //     // default:
+    //     //     std::cout << "Нет ответа" << std::endl;
+    //     //     break;
 
-        // }
-    default:
-        std::cout << "Нет ответа" << std::endl;
-        break;
-    }
+    //     // }
+    // default:
+    //     std::cout << "Нет ответа" << std::endl;
+    //     break;
+    // }
 
     // =========================================
     // ЗАДАНИЕ 2. ПРОВЕРКА ДОСТУПА
@@ -609,24 +610,24 @@ int main() {
     //
     // Использовать if / else if / else.
     //
-    int age;
-    std::cout << "Введите возраст: ";
-    std::cin >> age;
+    // int age;
+    // std::cout << "Введите возраст: ";
+    // std::cin >> age;
 
-    if (age >= 0 && age <= 12) {
-        std::cout << "ребенок" << std::endl;
-    } else if (age >= 13 && age <= 17) {
-        std::cout << "подросток" << std::endl;
-    } else if (age >= 18 && age <= 35) {
-        std::cout << "молодежь" << std::endl;
-    } else if (age >= 36 && age <= 60) {
-        std::cout << "взрослый" << std::endl;
-    } else if (age >= 61) {
-        std::cout << "пенсионер" << std::endl;
-    } else {
-        std::cout << "ты никто" << std::endl;
+    // if (age >= 0 && age <= 12) {
+    //     std::cout << "ребенок" << std::endl;
+    // } else if (age >= 13 && age <= 17) {
+    //     std::cout << "подросток" << std::endl;
+    // } else if (age >= 18 && age <= 35) {
+    //     std::cout << "молодежь" << std::endl;
+    // } else if (age >= 36 && age <= 60) {
+    //     std::cout << "взрослый" << std::endl;
+    // } else if (age >= 61) {
+    //     std::cout << "пенсионер" << std::endl;
+    // } else {
+    //     std::cout << "ты никто" << std::endl;
 
-    }
+    // }
 
     // =========================================
     // ЗАДАНИЕ 6. СВЕТОФОР
@@ -648,6 +649,30 @@ int main() {
     //
     // Неизвестный сигнал
 
+    // char score;
+    // std::cout << "Ввести символ: ";
+    // std::cin >> score;
+
+    // switch (score) {
+    // case 'r':
+    //     std::cout << "стоять" << std::endl;
+    //     break;
+    // case 'y':
+    //     std::cout << "приготовиться" << std::endl;
+    //     break;
+    // case 'g':
+    //     std::cout << "ехать" << std::endl;
+    //     break;
+    // default:
+    //     std::cout << "неизвестный символ" << std::endl;
+    //     break;
+
+
+    // }
+
+
+
+    mainWhile();
 
 
 
