@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()
+int loops()
 {
     /*
         Домашнее задание по C++ на 06.06.2026
@@ -44,10 +44,10 @@ int main()
         4
         5
     */
-    // int N;
+    // int n;
     // std::cout << "введите число: ";
-    // std::cin >> N;
-    // for (int index = 1; index <= N; ++index) {
+    // std::cin >> n;
+    // for (int index = 1; index <= n; ++index) {
     //     std::cout << index << std::endl;
     // }
     /*
@@ -73,11 +73,11 @@ int main()
     // int N;
     // std::cout << "Введите число: ";
     // std::cin >> N;
-    //
-    // int score = N;
-    // while (score >= 1) {
-    //     std::cout << score << std::endl;
-    //     ++score;
+
+    // // int score = N;
+    // while (N >= 1) {
+    //     std::cout << N << std::endl;
+    //     --N;
     // }
     // std::cout << "Старт" << std::endl;
      /*
@@ -98,13 +98,14 @@ int main()
          Пояснение:
          1 + 2 + 3 + 4 + 5 = 15
      */
-    // int N;
+    // int N, sum = 0;
     // std::cout << "Введи число: ";
     // std::cin >> N;
-    //
-    // for (int score = 1; score <= N; ++score) {
-    //     std::cout << score << std::endl;
+
+    // for (int i = 1; i <= N; ++i) {
+    //     sum += i;
     // }
+    // std::cout << sum << std::endl;
     /*
         ЗАДАНИЕ 4. Только четные числа
 
@@ -131,12 +132,12 @@ int main()
     // int N;
     // std::cout << "Ввести число: ";
     // std::cin >> N;
-    //
-    // for (int number = 1; number = N; ++number) {
+
+    // for (int number = 1; number <= N; ++number) {
     //     if (number % 2 == 0) {
-    //         continue;
+    //         std::cout << number << std::endl;
     //     }
-    //     std::cout << number << std::endl;
+    //     continue;
     // }
     /*
         ЗАДАНИЕ 5. Угадай число
@@ -162,10 +163,10 @@ int main()
     //Есть вопрос
     // int secret = 7;
     // int score;
-    // std::cout << "Введи число: ";
-    // std::cin >> score;
-    //
+
     // while (true) {
+    //     std::cout << "Введи число: ";
+    //     std::cin >> score;
     //     if (score < secret) {
     //         std::cout << "Больше" << std::endl;
     //     } else if (score > secret) {
@@ -205,17 +206,17 @@ int main()
         Неизвестная операция
     */
     // int number1, number2;
-    // char operat;
+    // char op;
     // std::cout << "Введи первое число: ";
     // std::cin >> number1;
-    //
+
     // std::cout << "Введи оператор: ";
-    // std::cin >> operat;
-    //
+    // std::cin >> op;
+
     // std::cout << "введи второе число: ";
     // std::cin >> number2;
 
-    // switch (operat) {
+    // switch (op) {
     //     case '+':
     //         std::cout << number1 + number2 << std::endl;
     //         break;
@@ -228,6 +229,7 @@ int main()
     //     case '/':
     //         if (number2 == 0) {
     //             std::cout << "Ошибка" << std::endl;
+    //             break;
     //         }
     //         std::cout << number1 / number2 << std::endl;
     //         break;
@@ -259,19 +261,17 @@ int main()
         Если все 3 попытки закончились, вывести:
         Попытки закончились
     */
-    // int password = 1234;
-    // std::cout << "ввести число-пароль: ";
-    // int across;
-    // std::cin >> across;
-    //
+    // int password = 1234, across;
     // for (int index = 0; index < 3; ++index) {
+    //     std::cout << "ввести число-пароль: ";
+    //     std::cin >> across;
     //     if (across == password) {
     //         std::cout << "Вход разрешен" << std::endl;
     //         break;
     //     } else {
     //         std::cout << "Неверный пароль" << std::endl;
     //     }
-    //     if (across == 3) {
+    //     if (index == 2) {
     //         std::cout << "Попытки закончились" << std::endl;
     //     }
     // }
@@ -299,33 +299,32 @@ int main()
         Неизвестный сигнал
     */
     // Есть вопрос
-    // char symbol;
-    // std::cout << "введи символ: ";
-    // std::cin >> symbol;
-    //
-    // while (true) {
-    //     switch (symbol) {
-    //         case 'r':
-    //             std::cout << "Стоять" << std::endl;
-    //             break;
-    //         case 'y':
-    //             std::cout << "Приготовиться" << std::endl;
-    //             break;
-    //         case 'g':
-    //             std::cout << "Ехать" << std::endl;
-    //             break;
-    //         case 'q':
-    //             if (symbol == 'q') {
-    //                 std::cout << "Выход" << std::endl;
-    //                 break;
-    //             }
-    //             std::cout << "Выход" << std::endl;
-    //             break;
-    //         default:
-    //             std::cout << "Неизвестный сигнал" << std::endl;
-    //             break;
-    //     }
-    // }
+    char symbol;
+
+    while (true) {
+        std::cout << "введи символ: ";
+        std::cin >> symbol;
+        switch (symbol) {
+            case 'r':
+                std::cout << "Стоять" << std::endl;
+                break;
+            case 'y':
+                std::cout << "Приготовиться" << std::endl;
+                break;
+            case 'g':
+                std::cout << "Ехать" << std::endl;
+                break;
+            case 'q':
+                std::cout << "Выход" << std::endl;
+                break;
+            default:
+                std::cout << "Неизвестный сигнал" << std::endl;
+                break;
+        }
+        if (symbol == 'q') {
+            break;
+        }
+    }
 
     /*
         ЗАДАНИЕ 9. Мини-тест по теории
@@ -333,7 +332,7 @@ int main()
         Ответить письменно в комментариях ниже:
 
         1. Чем while отличается от do while?
-        //while нужен для того чтобы проверять условие кода, а do-while нужен для того чтобы выполнить действие
+        //
 
         2. Для чего нужен break?
         // break нужен для того чтобы завершить цикл на каком-то условии
@@ -345,7 +344,7 @@ int main()
         // проверяет остаток от деления
 
         5. Почему порядок условий в if / else if важен?
-        // потому что каждое действие выполняется по порядку. если действие правда, то он сразу выведет положительный ответ, если действие ложное, то выведет отрицательный ответ.
+        // потому что каждое действие выполняется по порядку. если действие правда, то он сразу выведет.
     */
 
     /*
@@ -371,6 +370,11 @@ int main()
         7 * 9 = 63
         7 * 10 = 70
     */
+    int n;
+    std::cin >> n;
+    for (int i = 1; i <= 10; ++i) {
+        std::cout << n << " * " << i << " = " << n * i << std::endl;
+    }
 
     return 0;
 }

@@ -41,10 +41,10 @@ int mainWhile() {
 
     // Бесконечный цикл
 
-    // while (true)
-    // {
-    //     std::cout << "Работаю" << std::endl;
-    // }
+    while (true)
+    {
+        std::cout << "Работаю" << std::endl;
+    }
 
     i = 1;
 

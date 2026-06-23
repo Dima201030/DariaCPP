@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "cycles.h"
+#include "cpp_homeworks/homework_2026_06_06.h"
 
 int main() {
 
@@ -673,7 +674,7 @@ int main() {
 
 
     mainWhile();
-
+    // loops();
 
 
 
