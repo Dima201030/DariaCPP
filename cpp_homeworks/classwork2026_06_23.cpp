@@ -1,6 +1,6 @@
 #include "classwork2026_06_23.h"
 
-void loopsC() {
+int loopsC() {
         /*
     ОТРАБОТКА: циклы, условия, break, continue
 
@@ -160,4 +160,6 @@ void loopsC() {
     Подсказка:
     нужен цикл внутри цикла.
     */
+
+    return 0;
 }
