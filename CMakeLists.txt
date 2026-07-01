@@ -12,7 +12,8 @@ add_executable(DariaCPP main.cpp
     cpp_homeworks/homework_2026_06_06.h
     cpp_homeworks/classwork2026_06_23.h cpp_homeworks/classwork2026_06_23.cpp
     incrdecrpp.h incrdecrpp.cpp
-    cpp_homeworks/practice_2026_06_28_cycles.cpp
+    cpp_homeworks/pr.cpp
+    cpp_homeworks/pr.h
 )
 
 include(GNUInstallDirs)

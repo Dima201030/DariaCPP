@@ -1,6 +1,7 @@
+#include "pr.h"
 #include <iostream>
 
-int main()
+void pr()
 {
     /*
         Урок-практика: циклы
@@ -73,6 +74,25 @@ int main()
         5
     */
 
+    // Ввод: 5
+    // Вывод: 12345
+    // Нужен ли цикл: Да
+    // Сколько повторений известно заранее: от 1 до N
+    // Какой цикл выбираю: for
+    // Почему: есть конкретика
+    // Что меняется на каждом круге:
+    // Где цикл заканчивается:
+
+
+    // int N;
+    // std::cout << "Введите число: ";
+    // std::cin >> N;
+
+    // for (int i = 1; i <= N; ++i) {
+    //     std::cout << i << std::endl;
+    // }
+
+
     /*
         ЗАДАЧА 2. Обратная линия
 
@@ -90,6 +110,18 @@ int main()
         2
         1
     */
+
+    // int N;
+    // std::cout << "Ввести число: ";
+    // std::cin >> N;
+
+    // for ( int i = N; i >= 1; --i) {
+    //     std::cout << i << std::endl;
+    // }
+
+
+
+
 
     /*
         ЗАДАЧА 3. Коридор
@@ -111,6 +143,23 @@ int main()
         7
         8
     */
+
+    // int left, right;
+    // std::cout << "Ввести left:";
+    // std::cin >> left;
+
+    // std::cout << "Ввести right:";
+    // std::cin >> right;
+
+    // if (left > right) {
+    //     std::cout << "Ошибка" << std::endl;
+    // } else {
+    //     for (int i = left; i <= right; ++i) {
+
+        //         std::cout << i << std::endl;
+        //     }
+        // }
+
 
     /*
         ЗАДАЧА 4. Лифт
@@ -134,6 +183,34 @@ int main()
         3
     */
 
+    // int currentFloor, targetFloor;
+    // std::cout << "Введите currentFloor: ";
+    // std::cin >> currentFloor;
+
+    // std::cout << "Введите targetFloor: ";
+    // std::cin >> targetFloor;
+
+    // if (currentFloor < targetFloor) {
+    //     for (int i = currentFloor; i <= targetFloor; ++i) {
+    //         std::cout << i << std::endl;
+    //     }
+    // } else if (currentFloor > targetFloor)  {
+    //     for (int i = currentFloor; i >= targetFloor; --i) {
+    //         std::cout << i << std::endl;
+    //     }
+    // } else {
+    //     std::cout << "Вы уже на месте" << std::endl;
+    // }
+    // for (int i = currentFloor; i <= targetFloor; ++i) {
+    //     std::cout << i << std::endl;
+    // } if (currentFloor == targetFloor) {
+    //     std::cout << "Уже на месте" << std::endl;
+    // } else for (int i = currentFloor; i >= targetFloor; --i) {
+    //         std::cout << i << std::endl;
+    //     }
+
+
+
     /*
         ЗАДАЧА 5. Только каждый четвертый
 
@@ -150,6 +227,17 @@ int main()
         12
         16
     */
+
+    // int N;
+    // std::cout << "Ввести число: ";
+    // std::cin >> N;
+
+    // for (int i = 4; i <= N; ++i) {
+    //     if (i % 4 == 0) {
+    //         std::cout << i << std::endl;
+    //     }
+    // }
+
 
     /*
         РАУНД 2. Накопители: sum, count, product
@@ -172,6 +260,18 @@ int main()
         Вывод:
         14
     */
+    // int a, b, sum = 0;
+    // std::cout << "Введите a: ";
+    // std::cin >> a;
+
+    // std::cout << "Введите b: ";
+    // std::cin >> b;
+
+    // for (int i = a; i <= b; ++i) {
+    //     sum += i;
+    // }
+    // std::cout << sum << std::endl;
+
 
     /*
         ЗАДАЧА 7. Сумма чисел, которые делятся на 3
@@ -189,6 +289,16 @@ int main()
         Пояснение:
         3 + 6 + 9 = 18
     */
+    // int N;
+    // std::cout << "Введите число: ";
+    // std::cin >> N;
+
+    // for (int i = 3; i <= N; ++i) {
+    //     if (i % 3 == 0) {
+    //         std::cout << i << std::endl;
+    //     }
+    // }
+
 
     /*
         ЗАДАЧА 8. Количество отрицательных
@@ -209,6 +319,19 @@ int main()
         Вывод:
         2
     */
+
+    // int countNumbers, countNegative = 0;
+    // std::cout << "Введите countNumbers: ";
+    // std::cin >> countNumbers;
+
+    // for (int i = 0; i < countNumbers; ++i) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     if (temp <= 0) {
+    //         ++countNegative;
+    //     }
+    // }
+    // std::cout << countNegative << std::endl;
 
     /*
         ЗАДАЧА 9. Сумма без отрицательных
@@ -231,6 +354,20 @@ int main()
         Вывод:
         15
     */
+    // int countNumbers, sum = 0;
+    // std::cout << "Введите countNumbers: ";
+    // std::cin >> countNumbers;
+
+    // for (int i = 0; i < countNumbers; ++i) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     if (temp >= 0) {
+    //         sum += temp;
+    //     }
+    // }
+    // std::cout << sum << std::endl;
+
+
 
     /*
         ЗАДАЧА 10. Произведение от 1 до N
@@ -245,6 +382,18 @@ int main()
         Вывод:
         24
     */
+    // int N, some = 1;
+    // std::cout << "Введите N: ";
+    // std::cin >> N;
+
+    // for (int i = 1; i <= N; ++i) {
+    //     some
+
+    // }
+
+
+
+
 
     /*
         РАУНД 3. Неизвестное количество вводов
@@ -320,8 +469,7 @@ int main()
         Если ввел меньше secret, вывести "Больше".
         Если ввел больше secret, вывести "Меньше".
         Если угадал, вывести "Угадала" и количество попыток.
-
-        Пример:
+Пример:
         Ввод:
         10
         20
@@ -542,8 +690,7 @@ int main()
 
     /*
         ЗАДАЧА 28. Лестница из звездочек
-
-        Пользователь вводит N.
+Пользователь вводит N.
         Вывести:
 
         *
@@ -580,5 +727,72 @@ int main()
         }
     */
 
-    return 0;
+    /*
+    ЗАДАЧА 2. Линия чисел (с нуля)
+
+    Пользователь вводит N.
+    Вывести числа от 0 до N.
+
+    Пример:
+    Ввод:
+    4
+
+    Вывод:
+    0
+    1
+    2
+    3
+    4
+    */
+    // int B;
+    // std::cout << "Введите B: ";
+    // std::cin >> B;
+
+    // for (int i = 0; i <= B; ++i) {
+    //     std::cout << i << std::endl;
+    // }
+
+    /*
+    ЗАДАЧА 3. Линия чисел в обратном порядке
+
+    Пользователь вводит N.
+    Вывести числа от N до 1.
+
+    Пример:
+    Ввод:
+    5
+
+    Вывод:
+    5
+    4
+    3
+    2
+    1
+    */
+
+    // int A;
+    // std::cout << "Введите A: ";
+    // std::cin >> A;
+
+    // for (int i = A; i >= 1; --i) {
+    //     std::cout << i << std::endl;
+    // }
+
+    int A;
+    std::cout << "Введите A: ";
+    std::cin >> A;
+    int i = A;
+
+    while (i >= 1) {
+        std::cout << i << std::endl;
+        --i;
+    }
+
+
+
+
+
+
+
+    return;
 }

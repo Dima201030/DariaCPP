@@ -4,6 +4,7 @@
 #include "cpp_homeworks/homework_2026_06_06.h"
 #include "cpp_homeworks/classwork2026_06_23.h"
 #include "incrdecrpp.h"
+#include "cpp_homeworks/pr.h"
 
 int main() {
 
@@ -678,10 +679,11 @@ int main() {
     // mainWhile();
     // loops();
 
-    loopsC();
+    // loopsC();
 
     // incrDecr();
 
+    pr();
 
     return 0;
 }
