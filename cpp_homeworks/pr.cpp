@@ -201,15 +201,7 @@ void pr()
     // } else {
     //     std::cout << "Вы уже на месте" << std::endl;
     // }
-    // for (int i = currentFloor; i <= targetFloor; ++i) {
-    //     std::cout << i << std::endl;
-    // } if (currentFloor == targetFloor) {
-    //     std::cout << "Уже на месте" << std::endl;
-    // } else for (int i = currentFloor; i >= targetFloor; --i) {
-    //         std::cout << i << std::endl;
-    //     }
-
-
+    //
 
     /*
         ЗАДАЧА 5. Только каждый четвертый
@@ -382,15 +374,15 @@ void pr()
         Вывод:
         24
     */
-    // int N, some = 1;
-    // std::cout << "Введите N: ";
-    // std::cin >> N;
+    // int n, product = 1;
+    // std::cout << "Введите n: ";
+    // std::cin >> n;
 
-    // for (int i = 1; i <= N; ++i) {
-    //     some
+    // for (int i = 1; i <= n; ++i) {
+    //     product *= i;
 
     // }
-
+    // std::cout << product << std::endl;
 
 
 
@@ -422,6 +414,23 @@ void pr()
         Stop
     */
 
+
+    // int n;
+    // std::cout << "Введите числа: ";
+    // std::cin >> n;
+
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     if (temp == 0) {
+    //         std::cout << "Stop" << std::endl;
+    //         break;
+    //     } else {
+    //         std::cout << "Ok" << std::endl;
+    //     }
+    // }
+
+
     /*
         ЗАДАЧА 12. Сумма до нуля
 
@@ -439,6 +448,23 @@ void pr()
         Вывод:
         8
     */
+
+    // int sum = 0, a;
+    // std::cout << "Введите числа: ";
+    // std::cin >> a;
+
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     if (temp == 0) {
+    //         break;
+    //     }
+    //     sum += temp;
+    // }
+    // std::cout << sum << std::endl;
+
+
+
 
     /*
         ЗАДАЧА 13. Первое число больше 100
@@ -458,6 +484,21 @@ void pr()
         Мало
         Подходит
     */
+
+    // int n;
+    // std::cout << "Введите числа: ";
+    // std::cin >> n;
+
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     if (temp <= 100) {
+    //         std::cout << "Мало" << std::endl;
+    //     } else if (temp > 100) {
+    //         std::cout << "Подходит" << std::endl;
+    //         break;
+    //     }
+    // }
 
     /*
         ЗАДАЧА 14. Угадай число
@@ -482,6 +523,25 @@ void pr()
         3
     */
 
+    // int secret = 17, attempt = 0;
+
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
+    //     ++attempt;
+
+    //     if (temp < secret) {
+    //         std::cout << "Больше" << std::endl;
+    //     } else if (temp > secret) {
+    //         std::cout << "Меньше" << std::endl;
+    //     } else {
+    //         std::cout << "Угадала" << "\n" << attempt << std::endl;
+    //         break;
+
+    //     }
+    // }
+
+
     /*
         ЗАДАЧА 15. Пароль
 
@@ -494,6 +554,21 @@ void pr()
 
         В этой задаче количество попыток НЕ ограничено.
     */
+
+    // int password = 4321;
+    // std::cout << "Введите пароль: ";
+
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
+
+    //     if (temp == password) {
+    //         std::cout << "Вход" << std::endl;
+    //         break;
+    //     } else {
+    //         std::cout << "Неверно" << std::endl;
+    //     }
+    // }
 
     /*
         РАУНД 4. break, continue, switch внутри цикла
@@ -520,6 +595,20 @@ void pr()
         6
         7
     */
+    // int n, forbidden;
+    // std::cout << "Введите n: ";
+    // std::cin >> n;
+    // std::cout << "Введите forbidden: ";
+    // std::cin >> forbidden;
+
+    // for (int i = 1; i <= n; ++i) {
+    //     if (i == forbidden) {
+    //         continue;
+    //     }
+    //     std::cout << i << std::endl;
+    // }
+
+
 
     /*
         ЗАДАЧА 17. Остановиться на числе
@@ -540,7 +629,22 @@ void pr()
         3
         4
         5
+        6
     */
+    // int n, stopNumber;
+    // std::cout << "Введите n: ";
+    // std::cin >> n;
+    // std::cout << "Введите stopnumber: ";
+    // std::cin >> stopNumber;
+
+    // for (int i = 1; i <= n; ++i) {
+    //     if (i == stopNumber) {
+    //         std::cout << i << std::endl;
+    //         break;
+    //     }
+    //     std::cout << i << std::endl;
+    // }
+
 
     /*
         ЗАДАЧА 18. Пропуск плохих оценок
@@ -565,6 +669,50 @@ void pr()
         4
         5
     */
+    // int countMarks;
+    // std::cout << "Введите countMarks: ";
+    // std::cin >> countMarks;
+
+
+    // for (int i = 0; i < countMarks; ++i) {
+    //    int temp;
+    //    std::cin >> temp;
+
+    //    if (temp != 4 && temp != 5) {
+    //         continue;
+    //    }
+    //    std::cout << temp << std::endl;
+    // }
+
+    // очень неуверена в этом задании
+
+    // int countMarks, four = 0, five = 0;
+    // std::cout << "Введите countMarks: ";
+    // std::cin >> countMarks;
+
+
+    // for (int i = 0; i < countMarks; ++i) {
+    //     int temp;
+    //     std::cin >> temp;
+
+    //     if (temp == 4) {
+    //         ++four;
+    //     } else if (temp == 5) {
+    //         ++five;
+    //     }
+    // }
+
+    // std::cout << "========================================" << std::endl;
+
+    // for (int i = 0, j = (five + four); i < j; ++i) {
+    //     if (four) {
+    //         std::cout << 4 << std::endl;
+    //         --four;
+    //     } else {
+    //         std::cout << 5 << std::endl;
+    //         --five;
+    //     }
+    // }
 
     /*
         ЗАДАЧА 19. Мини-меню
@@ -584,6 +732,31 @@ void pr()
         break внутри switch не завершает цикл.
     */
 
+        // char op;
+
+        // while (true) {
+        //     std::cin >> op;
+
+        //     switch (op) {
+        //     case 'h':
+        //         std::cout << "Hello" << std::endl;
+        //         break;
+        //     case 'b':
+        //         std::cout << "Bye" << std::endl;
+        //         break;
+        //     case 'n':
+        //         std::cout << 100 << std::endl;
+        //         break;
+        //     case 'q':
+        //         std::cout << "Exit" << std::endl;
+        //         break;
+        //     default:
+        //         std::cout << "Unknown" << std::endl;
+        //         break;
+        //     }
+        // }
+
+
     /*
         ЗАДАЧА 20. Счетчик через меню
 
@@ -600,17 +773,63 @@ void pr()
         другой символ -> вывести "Unknown"
     */
 
+    // int counter = 0;
+    // char symbol;
+    // bool isStared = true;
+    // std::cout << "Введите символ: ";
+
+    // while (isStared) {
+    //     std::cin >> symbol;
+
+    //     switch (symbol) {
+    //     case '+':
+    //         // for (int i = 0; i <= counter; ++i) {
+    //         //     std::cout << i << std::endl;
+    //         //     break;
+    //         // }
+    //         ++counter;
+    //         break;
+    //     case '-':
+    //         // for (int k = 0; k >= counter; --k) {
+    //         //     std::cout << k << std::endl;
+    //         //     break;
+    //         // }
+    //         --counter;
+    //         break;
+    //     case 'p':
+    //         std::cout << counter << std::endl;
+    //         break;
+    //     case 'q':
+    //         std::cout << "Exit" << std::endl;
+    //         isStared = false;
+    //         break;
+    //     default:
+    //         std::cout << "Unknown" << std::endl;
+    //         break;
+    //     }
+
+    // }
     /*
         ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ
         Если основные 20 задач идут быстро, решать дальше.
     */
-
+    // Классная работа 04.07
     /*
         ЗАДАЧА 21. Числа без кратных 3 и 5
 
         Пользователь вводит N.
         Вывести числа от 1 до N, которые НЕ делятся на 3 и НЕ делятся на 5.
     */
+
+    // int n;
+    // std::cin >> n;
+
+    // for (int i = 0; i <= n; ++i) {
+    //     if (i % 3 == 0 || i % 5 == 0) {
+    //         continue;
+    //     }
+    //     std::cout << i << std::endl;
+    // }
 
     /*
         ЗАДАЧА 22. Первые 7 четных чисел
@@ -627,6 +846,14 @@ void pr()
         14
     */
 
+    // int score = 0;
+    // int temp = 2;
+
+    // while (score < 7) {
+    //     std::cout << temp << std::endl;
+    //     temp += 2;
+    //     ++score;
+    // }
     /*
         ЗАДАЧА 23. Первые 5 чисел, которые делятся на 6
 
@@ -640,6 +867,15 @@ void pr()
         30
     */
 
+    // int counter = 0;
+
+    // for (int i = 0; counter != 5; ++i) {
+    //     if (i % 6 == 0) {
+    //         std::cout << i << std::endl;
+    //         ++counter;
+    //     }
+    // }
+
     /*
         ЗАДАЧА 24. Сумма до отрицательного
 
@@ -648,17 +884,22 @@ void pr()
         Отрицательное число в сумму не добавлять.
     */
 
-    /*
-        ЗАДАЧА 25. Ограниченный пароль
+    // int sum = 0;
 
-        В программе есть:
-        int password = 2026;
+    // while (true) {
+    //     int temp;
+    //     std::cin >> temp;
 
-        У пользователя есть 3 попытки.
-        Если пароль правильный, вывести "Вход" и завершить цикл.
-        Если пароль неправильный, вывести "Ошибка".
-        Если все попытки закончились, вывести "Блокировка".
-    */
+    //     if (temp < 0) {
+    //         break;
+    //     } else {
+    //         sum += temp;
+    //     }
+
+    // }
+
+    // std::cout << sum << std::endl;
+
 
     /*
         ЗАДАЧА 26. Таблица умножения на N
@@ -671,6 +912,13 @@ void pr()
         ...
         N * 10 = ...
     */
+
+    // int n;
+    // std::cin >> n;
+
+    // for (int i = 1; i <= 10; ++i) {
+    //     std::cout << n << " * " << i << " = " << n * i << std::endl;
+    // }
 
     /*
         ЗАДАЧА 27. Квадрат из звездочек
@@ -688,6 +936,14 @@ void pr()
         ***
     */
 
+    // for (int i = 0; i < 3; ++i) {
+    //     for (int j = 0; j < 3; ++j) {
+    //         std::cout << "*";
+    //     }
+    //     std::cout << std::endl;
+    // }
+
+
     /*
         ЗАДАЧА 28. Лестница из звездочек
 Пользователь вводит N.
@@ -700,10 +956,21 @@ void pr()
         и так до N строк.
     */
 
-    /*
-        ЗАДАЧА 29. Предскажи вывод
+    // int N;
+    // std::cout << "Введите N: ";
+    // std::cin >> N;
 
-        Сначала написать ответ в комментарии.
+    // for (int i = 0; i <= N; ++i) {
+    //     for (int a = 0; a < i; ++a) {
+    //         std::cout << "*";
+    //     }
+    //     std::cout << std::endl;
+    // }
+
+    /*
+        // ЗАДАЧА 29. Предскажи вывод
+
+        // Сначала написать ответ в комментарии.
         Потом запустить и проверить.
 
         int x = 5;
@@ -713,8 +980,19 @@ void pr()
         std::cout << x << " " << y << std::endl;
 
         y = ++x;
-        std::cout << x << " " << y << std::endl;
+         std::cout << x << " " << y << std::endl;
     */
+    // x = 6; y = 5;
+    // x = 7; y = 6;
+
+    // int x = 5;
+    // int y = 0;
+
+    // y = x++;
+    // std::cout << x << " " << y << std::endl;
+
+    // y = ++x;
+    // std::cout << x << " " << y << std::endl;
 
     /*
         ЗАДАЧА 30. Исправь ошибку
@@ -726,6 +1004,10 @@ void pr()
             std::cout << i << std::endl;
         }
     */
+
+    // for (int i = 10; i >= 1; --i) {
+    //     std::cout << i << std::endl;
+    //  }
 
     /*
     ЗАДАЧА 2. Линия чисел (с нуля)
@@ -744,11 +1026,12 @@ void pr()
     3
     4
     */
-    // int B;
-    // std::cout << "Введите B: ";
-    // std::cin >> B;
 
-    // for (int i = 0; i <= B; ++i) {
+    // int n;
+    // std::cout << "Введите n: ";
+    // std::cin >> n;
+
+    // for (int i = 0; i <= n; ++i) {
     //     std::cout << i << std::endl;
     // }
 
@@ -770,23 +1053,134 @@ void pr()
     1
     */
 
-    // int A;
-    // std::cout << "Введите A: ";
-    // std::cin >> A;
+    // int n;
+    // std::cout << "Введите n: ";
+    // std::cin >> n;
 
-    // for (int i = A; i >= 1; --i) {
+    // for (int i = n; i >= 1; --i) {
     //     std::cout << i << std::endl;
     // }
 
-    int A;
-    std::cout << "Введите A: ";
-    std::cin >> A;
-    int i = A;
 
-    while (i >= 1) {
-        std::cout << i << std::endl;
-        --i;
-    }
+
+    // int i = 0, a;
+    // std::cout << "Введите число: ";
+    // std::cin >> a;
+
+    // while (i <= a) {
+    //     std::cout << i << std::endl;
+    //     ++i;
+    // }
+
+
+    // int i;
+    // std::cout << "Введите число: ";
+    // std::cin >> i;
+
+    // while (i >= 0) {
+    //     std::cout << i << std::endl;
+    //     --i;
+    // }
+
+
+    // int i = 0, a;
+    // std::cout << "Введите число: ";
+    // std::cin >> a;
+    // do {
+    //     std::cout << i << std::endl;
+    //     ++i;
+    // }
+    // while (i <= a);
+
+
+    // int i;
+    // std::cout << "Введите число: ";
+    // std::cin >> i;
+    // do {
+    //     std::cout << i << std::endl;
+    //     --i;
+    // }
+    // while (i >= 0);
+
+
+    // int a;
+    // std::cout << "Введите число: ";
+    // std::cin >> a;
+    // for (int i = 0; i <= a; ++i) {
+    //     std::cout << i << std::endl;
+    // }
+
+
+    // int a;
+    // std::cout << "Введите число: ";
+    // std::cin >> a;
+    // for (int i = a; i >= 0; --i) {
+    //     std::cout << i << std::endl;
+    // }
+
+
+    // int d = 0;
+    // while (d <= 456) {
+    //     std::cout << d << std::endl;
+    //     ++d;
+    // }
+
+
+    // int n;
+    // std::cout << "Введите число: ";
+    // std::cin >> n;
+
+    // for (int i = 0; i <= 78; ++i) {
+    //     std::cout << i << std::endl;
+    // }
+
+
+    // int b;
+    // std::cout << "Введите b: ";
+    // std::cin >> b;
+    // do {
+    //     std::cout << b << std::endl;
+    //     --b;
+    // }
+    // while (b >= 0);
+
+
+    // int i;
+    // std::cout << "Введите i: ";
+    // std::cin >> i;
+    // do {
+    //     std::cout << i << std::endl;
+    //     ++i;
+    // }
+    // while (i <= 34);
+
+
+    // int i;
+    // std::cout << "Введите i: ";
+    // std::cin >> i;
+    // while (i >= 0) {
+    //     std::cout << i << std::endl;
+    //     --i;
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

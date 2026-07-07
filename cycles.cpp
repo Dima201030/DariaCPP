@@ -89,12 +89,10 @@ int mainWhile() {
 
     i = 35;
 
-    do
-    {
+    do {
         std::cout << i << std::endl;
         ++i;
-    }
-    while (i <= 10);
+    } while (i <= 10);
 
     // =========================================
     //  for
@@ -112,8 +110,8 @@ int mainWhile() {
     //     ++i;
     // }
 
-    for (int j = 0; j <= 10; ++j) {
-        std::cout << "* " << j << std::endl;
+    for (;;) {
+        std::cout << "* " << std::endl;
     }
 
 

@@ -5,6 +5,7 @@
 #include "cpp_homeworks/classwork2026_06_23.h"
 #include "incrdecrpp.h"
 #include "cpp_homeworks/pr.h"
+#include "func.h"
 
 int main() {
 
@@ -683,7 +684,9 @@ int main() {
 
     // incrDecr();
 
-    pr();
+    // pr();
+
+    func();
 
     return 0;
 }

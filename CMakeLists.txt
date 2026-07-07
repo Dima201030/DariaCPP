@@ -14,6 +14,7 @@ add_executable(DariaCPP main.cpp
     incrdecrpp.h incrdecrpp.cpp
     cpp_homeworks/pr.cpp
     cpp_homeworks/pr.h
+    func.h func.cpp
 )
 
 include(GNUInstallDirs)
