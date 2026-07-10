@@ -1,6 +1,481 @@
 #include "pr.h"
 #include <iostream>
 
+void task1(int n) {
+
+    for (int i = 1; i <= n; ++i) {
+        std::cout << i << std::endl;
+    }
+}
+
+void task2() {
+
+    int N;
+    std::cout << "Ввести число: ";
+    std::cin >> N;
+
+    for ( int i = N; i >= 1; --i) {
+        std::cout << i << std::endl;
+    }
+}
+
+void task3() {
+
+    int left, right;
+    std::cout << "Ввести left:";
+    std::cin >> left;
+
+    std::cout << "Ввести right:";
+    std::cin >> right;
+
+    if (left > right) {
+        std::cout << "Ошибка" << std::endl;
+    } else {
+        for (int i = left; i <= right; ++i) {
+
+            std::cout << i << std::endl;
+        }
+    }
+}
+
+void task4() {
+
+    int currentFloor, targetFloor;
+    std::cout << "Введите currentFloor: ";
+    std::cin >> currentFloor;
+
+    std::cout << "Введите targetFloor: ";
+    std::cin >> targetFloor;
+
+    if (currentFloor < targetFloor) {
+        for (int i = currentFloor; i <= targetFloor; ++i) {
+            std::cout << i << std::endl;
+        }
+    } else if (currentFloor > targetFloor)  {
+        for (int i = currentFloor; i >= targetFloor; --i) {
+            std::cout << i << std::endl;
+        }
+    } else {
+        std::cout << "Вы уже на месте" << std::endl;
+    }
+
+}
+
+void task5() {
+
+    int N;
+    std::cout << "Ввести число: ";
+    std::cin >> N;
+
+    for (int i = 4; i <= N; ++i) {
+        if (i % 4 == 0) {
+            std::cout << i << std::endl;
+        }
+    }
+}
+
+void task6() {
+
+    int a, b, sum = 0;
+    std::cout << "Введите a: ";
+    std::cin >> a;
+
+    std::cout << "Введите b: ";
+    std::cin >> b;
+
+    for (int i = a; i <= b; ++i) {
+        sum += i;
+    }
+    std::cout << sum << std::endl;
+
+}
+
+void task7() {
+
+    int N;
+    std::cout << "Введите число: ";
+    std::cin >> N;
+
+    for (int i = 3; i <= N; ++i) {
+        if (i % 3 == 0) {
+            std::cout << i << std::endl;
+        }
+    }
+}
+
+void task8() {
+
+    int countNumbers, countNegative = 0;
+    std::cout << "Введите countNumbers: ";
+    std::cin >> countNumbers;
+
+    for (int i = 0; i < countNumbers; ++i) {
+        int temp;
+        std::cin >> temp;
+        if (temp <= 0) {
+            ++countNegative;
+        }
+    }
+    std::cout << countNegative << std::endl;
+}
+
+void task9() {
+
+    int countNumbers, sum = 0;
+    std::cout << "Введите countNumbers: ";
+    std::cin >> countNumbers;
+
+    for (int i = 0; i < countNumbers; ++i) {
+        int temp;
+        std::cin >> temp;
+        if (temp >= 0) {
+            sum += temp;
+        }
+    }
+    std::cout << sum << std::endl;
+
+}
+
+void task10() {
+
+    int n, product = 1;
+    std::cout << "Введите n: ";
+    std::cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        product *= i;
+
+    }
+    std::cout << product << std::endl;
+
+}
+
+void task11() {
+
+
+    int n;
+    std::cout << "Введите числа: ";
+    std::cin >> n;
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+        if (temp == 0) {
+            std::cout << "Stop" << std::endl;
+            break;
+        } else {
+            std::cout << "Ok" << std::endl;
+        }
+    }
+}
+
+void task12() {
+
+    int sum = 0, a;
+    std::cout << "Введите числа: ";
+    std::cin >> a;
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+        if (temp == 0) {
+            break;
+        }
+        sum += temp;
+    }
+    std::cout << sum << std::endl;
+
+
+}
+
+void task13() {
+
+    int n;
+    std::cout << "Введите числа: ";
+    std::cin >> n;
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+        if (temp <= 100) {
+            std::cout << "Мало" << std::endl;
+        } else if (temp > 100) {
+            std::cout << "Подходит" << std::endl;
+            break;
+        }
+    }
+}
+
+void task14() {
+
+    int secret = 17, attempt = 0;
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+        ++attempt;
+
+        if (temp < secret) {
+            std::cout << "Больше" << std::endl;
+        } else if (temp > secret) {
+            std::cout << "Меньше" << std::endl;
+        } else {
+            std::cout << "Угадала" << "\n" << attempt << std::endl;
+            break;
+
+        }
+    }
+}
+
+void task15() {
+
+    int password = 4321;
+    std::cout << "Введите пароль: ";
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+
+        if (temp == password) {
+            std::cout << "Вход" << std::endl;
+            break;
+        } else {
+            std::cout << "Неверно" << std::endl;
+        }
+    }
+
+}
+
+void task16() {
+
+    int n, forbidden;
+    std::cout << "Введите n: ";
+    std::cin >> n;
+    std::cout << "Введите forbidden: ";
+    std::cin >> forbidden;
+
+    for (int i = 1; i <= n; ++i) {
+        if (i == forbidden) {
+            continue;
+        }
+        std::cout << i << std::endl;
+    }
+}
+
+void task17() {
+
+    int n, stopNumber;
+    std::cout << "Введите n: ";
+    std::cin >> n;
+    std::cout << "Введите stopnumber: ";
+    std::cin >> stopNumber;
+
+    for (int i = 1; i <= n; ++i) {
+        if (i == stopNumber) {
+            std::cout << i << std::endl;
+            break;
+        }
+        std::cout << i << std::endl;
+    }
+
+}
+
+void task18() {
+
+    int countMarks;
+    std::cout << "Введите countMarks: ";
+    std::cin >> countMarks;
+
+
+    for (int i = 0; i < countMarks; ++i) {
+        int temp;
+        std::cin >> temp;
+
+        if (temp != 4 && temp != 5) {
+            continue;
+        }
+        std::cout << temp << std::endl;
+    }
+}
+
+void task19() {
+
+    char op;
+
+    while (true) {
+        std::cin >> op;
+
+        switch (op) {
+        case 'h':
+            std::cout << "Hello" << std::endl;
+            break;
+        case 'b':
+            std::cout << "Bye" << std::endl;
+            break;
+        case 'n':
+            std::cout << 100 << std::endl;
+            break;
+        case 'q':
+            std::cout << "Exit" << std::endl;
+            break;
+        default:
+            std::cout << "Unknown" << std::endl;
+            break;
+        }
+    }
+}
+
+void task20() {
+
+    int counter = 0;
+    char symbol;
+    bool isStared = true;
+    std::cout << "Введите символ: ";
+
+    while (isStared) {
+        std::cin >> symbol;
+
+        switch (symbol) {
+        case '+':
+            // for (int i = 0; i <= counter; ++i) {
+            //     std::cout << i << std::endl;
+            //     break;
+            // }
+            ++counter;
+            break;
+        case '-':
+            // for (int k = 0; k >= counter; --k) {
+            //     std::cout << k << std::endl;
+            //     break;
+            // }
+            --counter;
+            break;
+        case 'p':
+            std::cout << counter << std::endl;
+            break;
+        case 'q':
+            std::cout << "Exit" << std::endl;
+            isStared = false;
+            break;
+        default:
+            std::cout << "Unknown" << std::endl;
+            break;
+        }
+    }
+}
+
+void task21() {
+
+    int n;
+    std::cin >> n;
+
+    for (int i = 0; i <= n; ++i) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            continue;
+        }
+        std::cout << i << std::endl;
+    }
+}
+
+void task22() {
+
+    int score = 0;
+    int temp = 2;
+
+    while (score < 7) {
+        std::cout << temp << std::endl;
+        temp += 2;
+        ++score;
+    }
+}
+
+void task23() {
+
+    int counter = 0;
+
+    for (int i = 0; counter != 5; ++i) {
+        if (i % 6 == 0) {
+            std::cout << i << std::endl;
+            ++counter;
+        }
+    }
+}
+
+void task24() {
+
+    int sum = 0;
+
+    while (true) {
+        int temp;
+        std::cin >> temp;
+
+        if (temp < 0) {
+            break;
+        } else {
+            sum += temp;
+        }
+
+    }
+
+    std::cout << sum << std::endl;
+
+}
+
+void task26() {
+
+    int n;
+    std::cin >> n;
+
+    for (int i = 1; i <= 10; ++i) {
+        std::cout << n << " * " << i << " = " << n * i << std::endl;
+    }
+
+}
+
+void task27() {
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+}
+
+void task28() {
+
+    int N;
+    std::cout << "Введите N: ";
+    std::cin >> N;
+
+    for (int i = 0; i <= N; ++i) {
+        for (int a = 0; a < i; ++a) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+}
+
+void task29() {
+
+    int x = 5;
+    int y = 0;
+
+    y = x++;
+    std::cout << x << " " << y << std::endl;
+
+    y = ++x;
+    std::cout << x << " " << y << std::endl;
+
+}
+
+void task30() {
+
+    for (int i = 10; i >= 1; --i) {
+        std::cout << i << std::endl;
+    }
+}
+
 void pr()
 {
     /*
@@ -84,13 +559,7 @@ void pr()
     // Где цикл заканчивается:
 
 
-    // int N;
-    // std::cout << "Введите число: ";
-    // std::cin >> N;
-
-    // for (int i = 1; i <= N; ++i) {
-    //     std::cout << i << std::endl;
-    // }
+    // task1(5);
 
 
     /*
@@ -111,16 +580,7 @@ void pr()
         1
     */
 
-    // int N;
-    // std::cout << "Ввести число: ";
-    // std::cin >> N;
-
-    // for ( int i = N; i >= 1; --i) {
-    //     std::cout << i << std::endl;
-    // }
-
-
-
+    // task2();
 
 
     /*
@@ -144,21 +604,7 @@ void pr()
         8
     */
 
-    // int left, right;
-    // std::cout << "Ввести left:";
-    // std::cin >> left;
-
-    // std::cout << "Ввести right:";
-    // std::cin >> right;
-
-    // if (left > right) {
-    //     std::cout << "Ошибка" << std::endl;
-    // } else {
-    //     for (int i = left; i <= right; ++i) {
-
-        //         std::cout << i << std::endl;
-        //     }
-        // }
+    // task3();
 
 
     /*
@@ -183,25 +629,7 @@ void pr()
         3
     */
 
-    // int currentFloor, targetFloor;
-    // std::cout << "Введите currentFloor: ";
-    // std::cin >> currentFloor;
-
-    // std::cout << "Введите targetFloor: ";
-    // std::cin >> targetFloor;
-
-    // if (currentFloor < targetFloor) {
-    //     for (int i = currentFloor; i <= targetFloor; ++i) {
-    //         std::cout << i << std::endl;
-    //     }
-    // } else if (currentFloor > targetFloor)  {
-    //     for (int i = currentFloor; i >= targetFloor; --i) {
-    //         std::cout << i << std::endl;
-    //     }
-    // } else {
-    //     std::cout << "Вы уже на месте" << std::endl;
-    // }
-    //
+    // task4();
 
     /*
         ЗАДАЧА 5. Только каждый четвертый
@@ -220,15 +648,8 @@ void pr()
         16
     */
 
-    // int N;
-    // std::cout << "Ввести число: ";
-    // std::cin >> N;
+    // task5();
 
-    // for (int i = 4; i <= N; ++i) {
-    //     if (i % 4 == 0) {
-    //         std::cout << i << std::endl;
-    //     }
-    // }
 
 
     /*
@@ -252,18 +673,8 @@ void pr()
         Вывод:
         14
     */
-    // int a, b, sum = 0;
-    // std::cout << "Введите a: ";
-    // std::cin >> a;
 
-    // std::cout << "Введите b: ";
-    // std::cin >> b;
-
-    // for (int i = a; i <= b; ++i) {
-    //     sum += i;
-    // }
-    // std::cout << sum << std::endl;
-
+    // task6();
 
     /*
         ЗАДАЧА 7. Сумма чисел, которые делятся на 3
@@ -281,16 +692,8 @@ void pr()
         Пояснение:
         3 + 6 + 9 = 18
     */
-    // int N;
-    // std::cout << "Введите число: ";
-    // std::cin >> N;
 
-    // for (int i = 3; i <= N; ++i) {
-    //     if (i % 3 == 0) {
-    //         std::cout << i << std::endl;
-    //     }
-    // }
-
+    // task7();
 
     /*
         ЗАДАЧА 8. Количество отрицательных
@@ -312,18 +715,7 @@ void pr()
         2
     */
 
-    // int countNumbers, countNegative = 0;
-    // std::cout << "Введите countNumbers: ";
-    // std::cin >> countNumbers;
-
-    // for (int i = 0; i < countNumbers; ++i) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     if (temp <= 0) {
-    //         ++countNegative;
-    //     }
-    // }
-    // std::cout << countNegative << std::endl;
+    // task8();
 
     /*
         ЗАДАЧА 9. Сумма без отрицательных
@@ -346,19 +738,8 @@ void pr()
         Вывод:
         15
     */
-    // int countNumbers, sum = 0;
-    // std::cout << "Введите countNumbers: ";
-    // std::cin >> countNumbers;
 
-    // for (int i = 0; i < countNumbers; ++i) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     if (temp >= 0) {
-    //         sum += temp;
-    //     }
-    // }
-    // std::cout << sum << std::endl;
-
+    // task9();
 
 
     /*
@@ -374,16 +755,8 @@ void pr()
         Вывод:
         24
     */
-    // int n, product = 1;
-    // std::cout << "Введите n: ";
-    // std::cin >> n;
 
-    // for (int i = 1; i <= n; ++i) {
-    //     product *= i;
-
-    // }
-    // std::cout << product << std::endl;
-
+    // task10();
 
 
 
@@ -415,20 +788,7 @@ void pr()
     */
 
 
-    // int n;
-    // std::cout << "Введите числа: ";
-    // std::cin >> n;
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     if (temp == 0) {
-    //         std::cout << "Stop" << std::endl;
-    //         break;
-    //     } else {
-    //         std::cout << "Ok" << std::endl;
-    //     }
-    // }
+    // task11();
 
 
     /*
@@ -449,21 +809,7 @@ void pr()
         8
     */
 
-    // int sum = 0, a;
-    // std::cout << "Введите числа: ";
-    // std::cin >> a;
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     if (temp == 0) {
-    //         break;
-    //     }
-    //     sum += temp;
-    // }
-    // std::cout << sum << std::endl;
-
-
+    // task12();
 
 
     /*
@@ -485,20 +831,7 @@ void pr()
         Подходит
     */
 
-    // int n;
-    // std::cout << "Введите числа: ";
-    // std::cin >> n;
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     if (temp <= 100) {
-    //         std::cout << "Мало" << std::endl;
-    //     } else if (temp > 100) {
-    //         std::cout << "Подходит" << std::endl;
-    //         break;
-    //     }
-    // }
+    // task13();
 
     /*
         ЗАДАЧА 14. Угадай число
@@ -523,23 +856,7 @@ void pr()
         3
     */
 
-    // int secret = 17, attempt = 0;
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-    //     ++attempt;
-
-    //     if (temp < secret) {
-    //         std::cout << "Больше" << std::endl;
-    //     } else if (temp > secret) {
-    //         std::cout << "Меньше" << std::endl;
-    //     } else {
-    //         std::cout << "Угадала" << "\n" << attempt << std::endl;
-    //         break;
-
-    //     }
-    // }
+    // task14();
 
 
     /*
@@ -555,20 +872,7 @@ void pr()
         В этой задаче количество попыток НЕ ограничено.
     */
 
-    // int password = 4321;
-    // std::cout << "Введите пароль: ";
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-
-    //     if (temp == password) {
-    //         std::cout << "Вход" << std::endl;
-    //         break;
-    //     } else {
-    //         std::cout << "Неверно" << std::endl;
-    //     }
-    // }
+    // task15();
 
     /*
         РАУНД 4. break, continue, switch внутри цикла
@@ -595,20 +899,8 @@ void pr()
         6
         7
     */
-    // int n, forbidden;
-    // std::cout << "Введите n: ";
-    // std::cin >> n;
-    // std::cout << "Введите forbidden: ";
-    // std::cin >> forbidden;
 
-    // for (int i = 1; i <= n; ++i) {
-    //     if (i == forbidden) {
-    //         continue;
-    //     }
-    //     std::cout << i << std::endl;
-    // }
-
-
+    // task16();
 
     /*
         ЗАДАЧА 17. Остановиться на числе
@@ -631,20 +923,8 @@ void pr()
         5
         6
     */
-    // int n, stopNumber;
-    // std::cout << "Введите n: ";
-    // std::cin >> n;
-    // std::cout << "Введите stopnumber: ";
-    // std::cin >> stopNumber;
 
-    // for (int i = 1; i <= n; ++i) {
-    //     if (i == stopNumber) {
-    //         std::cout << i << std::endl;
-    //         break;
-    //     }
-    //     std::cout << i << std::endl;
-    // }
-
+    // task17();
 
     /*
         ЗАДАЧА 18. Пропуск плохих оценок
@@ -669,20 +949,10 @@ void pr()
         4
         5
     */
-    // int countMarks;
-    // std::cout << "Введите countMarks: ";
-    // std::cin >> countMarks;
+
+    // task18();
 
 
-    // for (int i = 0; i < countMarks; ++i) {
-    //    int temp;
-    //    std::cin >> temp;
-
-    //    if (temp != 4 && temp != 5) {
-    //         continue;
-    //    }
-    //    std::cout << temp << std::endl;
-    // }
 
     // очень неуверена в этом задании
 
@@ -732,30 +1002,7 @@ void pr()
         break внутри switch не завершает цикл.
     */
 
-        // char op;
-
-        // while (true) {
-        //     std::cin >> op;
-
-        //     switch (op) {
-        //     case 'h':
-        //         std::cout << "Hello" << std::endl;
-        //         break;
-        //     case 'b':
-        //         std::cout << "Bye" << std::endl;
-        //         break;
-        //     case 'n':
-        //         std::cout << 100 << std::endl;
-        //         break;
-        //     case 'q':
-        //         std::cout << "Exit" << std::endl;
-        //         break;
-        //     default:
-        //         std::cout << "Unknown" << std::endl;
-        //         break;
-        //     }
-        // }
-
+    // task19();
 
     /*
         ЗАДАЧА 20. Счетчик через меню
@@ -773,40 +1020,7 @@ void pr()
         другой символ -> вывести "Unknown"
     */
 
-    // int counter = 0;
-    // char symbol;
-    // bool isStared = true;
-    // std::cout << "Введите символ: ";
-
-    // while (isStared) {
-    //     std::cin >> symbol;
-
-    //     switch (symbol) {
-    //     case '+':
-    //         // for (int i = 0; i <= counter; ++i) {
-    //         //     std::cout << i << std::endl;
-    //         //     break;
-    //         // }
-    //         ++counter;
-    //         break;
-    //     case '-':
-    //         // for (int k = 0; k >= counter; --k) {
-    //         //     std::cout << k << std::endl;
-    //         //     break;
-    //         // }
-    //         --counter;
-    //         break;
-    //     case 'p':
-    //         std::cout << counter << std::endl;
-    //         break;
-    //     case 'q':
-    //         std::cout << "Exit" << std::endl;
-    //         isStared = false;
-    //         break;
-    //     default:
-    //         std::cout << "Unknown" << std::endl;
-    //         break;
-    //     }
+    // task20();
 
     // }
     /*
@@ -821,15 +1035,7 @@ void pr()
         Вывести числа от 1 до N, которые НЕ делятся на 3 и НЕ делятся на 5.
     */
 
-    // int n;
-    // std::cin >> n;
-
-    // for (int i = 0; i <= n; ++i) {
-    //     if (i % 3 == 0 || i % 5 == 0) {
-    //         continue;
-    //     }
-    //     std::cout << i << std::endl;
-    // }
+    // task21();
 
     /*
         ЗАДАЧА 22. Первые 7 четных чисел
@@ -846,14 +1052,8 @@ void pr()
         14
     */
 
-    // int score = 0;
-    // int temp = 2;
+    // task22();
 
-    // while (score < 7) {
-    //     std::cout << temp << std::endl;
-    //     temp += 2;
-    //     ++score;
-    // }
     /*
         ЗАДАЧА 23. Первые 5 чисел, которые делятся на 6
 
@@ -867,14 +1067,7 @@ void pr()
         30
     */
 
-    // int counter = 0;
-
-    // for (int i = 0; counter != 5; ++i) {
-    //     if (i % 6 == 0) {
-    //         std::cout << i << std::endl;
-    //         ++counter;
-    //     }
-    // }
+    // task23();
 
     /*
         ЗАДАЧА 24. Сумма до отрицательного
@@ -884,22 +1077,7 @@ void pr()
         Отрицательное число в сумму не добавлять.
     */
 
-    // int sum = 0;
-
-    // while (true) {
-    //     int temp;
-    //     std::cin >> temp;
-
-    //     if (temp < 0) {
-    //         break;
-    //     } else {
-    //         sum += temp;
-    //     }
-
-    // }
-
-    // std::cout << sum << std::endl;
-
+    // task24();
 
     /*
         ЗАДАЧА 26. Таблица умножения на N
@@ -913,12 +1091,7 @@ void pr()
         N * 10 = ...
     */
 
-    // int n;
-    // std::cin >> n;
-
-    // for (int i = 1; i <= 10; ++i) {
-    //     std::cout << n << " * " << i << " = " << n * i << std::endl;
-    // }
+    // task26();
 
     /*
         ЗАДАЧА 27. Квадрат из звездочек
@@ -936,13 +1109,7 @@ void pr()
         ***
     */
 
-    // for (int i = 0; i < 3; ++i) {
-    //     for (int j = 0; j < 3; ++j) {
-    //         std::cout << "*";
-    //     }
-    //     std::cout << std::endl;
-    // }
-
+    // task27();
 
     /*
         ЗАДАЧА 28. Лестница из звездочек
@@ -956,16 +1123,7 @@ void pr()
         и так до N строк.
     */
 
-    // int N;
-    // std::cout << "Введите N: ";
-    // std::cin >> N;
-
-    // for (int i = 0; i <= N; ++i) {
-    //     for (int a = 0; a < i; ++a) {
-    //         std::cout << "*";
-    //     }
-    //     std::cout << std::endl;
-    // }
+    // task28();
 
     /*
         // ЗАДАЧА 29. Предскажи вывод
@@ -985,14 +1143,7 @@ void pr()
     // x = 6; y = 5;
     // x = 7; y = 6;
 
-    // int x = 5;
-    // int y = 0;
-
-    // y = x++;
-    // std::cout << x << " " << y << std::endl;
-
-    // y = ++x;
-    // std::cout << x << " " << y << std::endl;
+    // task29();
 
     /*
         ЗАДАЧА 30. Исправь ошибку
@@ -1005,9 +1156,7 @@ void pr()
         }
     */
 
-    // for (int i = 10; i >= 1; --i) {
-    //     std::cout << i << std::endl;
-    //  }
+    // task30();
 
     /*
     ЗАДАЧА 2. Линия чисел (с нуля)
@@ -1162,31 +1311,6 @@ void pr()
     //     std::cout << i << std::endl;
     //     --i;
     // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     return;
 }

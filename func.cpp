@@ -2,36 +2,19 @@
 
 #include <iostream>
 
-void printHello() {
+int sum(int a, int b) {
 
-    int countMarks, four = 0, five = 0;
-    std::cout << "Введите countMarks: ";
-    std::cin >> countMarks;
-
-    for (int i = 0; i < countMarks; ++i) {
-        int temp;
-        std::cin >> temp;
-
-        if (temp == 4) {
-            ++four;
-        } else if (temp == 5) {
-            ++five;
-        }
-    }
-
-    std::cout << "========================================" << std::endl;
-
-    for (int i = 0, j = (five + four); i < j; ++i) {
-        if (four) {
-            std::cout << 4 << std::endl;
-            --four;
-        } else {
-            std::cout << 5 << std::endl;
-            --five;
-        }
-    }
+    return a + b;
 
 }
+
+void printHello() {
+
+    std::cout << "Hello!" << std::endl;
+
+}
+
+
 
 void func() {
     // std::cout << "***********\n";
@@ -58,7 +41,7 @@ void func() {
      * Сделать чай()
      *
      *
-     * тип имя() {
+     * тип имя(параметры) {
      *    код
      * }
      *
@@ -67,11 +50,20 @@ void func() {
      *
      *
      *
+     *
+     *
     */
 
 
     printHello();
 
+    sum(16, 19);
+
+    std::cout << sum(16, 19) << std::endl;
+
+    int lk = sum(16, 19);
+
+    std::cout << lk << std::endl;
 
 
 }

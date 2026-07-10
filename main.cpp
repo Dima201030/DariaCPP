@@ -34,8 +34,6 @@ int main() {
 
 
 
-
-
     // // Арифметические операторы
 
     // int i = 45, p = 89, result = 0;
@@ -684,9 +682,9 @@ int main() {
 
     // incrDecr();
 
-    // pr();
+    pr();
 
-    func();
+    // func();
 
     return 0;
 }
